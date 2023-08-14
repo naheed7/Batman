@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GT-pages</title>
     <style>
-        body{
-            background-image: url(batman.jpg);
-        }
+      
         
         img{
             width: 50%;
@@ -19,13 +17,52 @@
         div{
             width: 100px;
             height: 100px;
+            background-color: red;
+            animation-name:example;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count:3 ;
         }
+        ::selection{
+            color: red;
+            background-color: black;
+        }
+        a:visited{
+            color: whitesmoke;
+
+        }
+        a:link{
+            background-color: red;
+        }
+        p::after{
+            content:"🔥 " ;
+        }
+        @keyframes example{
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+             50%  {background-color:blue; left:200px; top:200px;}
+             75%  {background-color:green; left:0px; top:200px;}
+             100% {background-color:red; left:0px; top:0px;}
+        }
+        h2{
+            width: 65px;
+            height: 25px;
+            background-color: black;
+            animation-name:example;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count:infinite;
+        }
+        
+
+
 
 
       
     </style>
 </head>
 <body>
+    <h2>Nahid</h2>
     
     <p>My favrt Player is Ronaldo </p>
     <br>
@@ -43,6 +80,10 @@
         <div>abay</div>
         <div>jigay</div>
     </section>
+    <a href="https://www.w3schools.com/cssref/sel_visited.php">w3schools</a>
+
+
+
     
 </body>
 </html>
