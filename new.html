@@ -6,7 +6,10 @@
     <title>GT-pages</title>
     <style>
       
-        
+    html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 125%;
+    }
         img{
             width: 50%;
             height: 50%;
@@ -14,21 +17,13 @@
         .dude{
             background-color: cyan;
         }
-        div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name:example;
-            animation-duration: 5s;
-            position: relative;
-            animation-iteration-count:3 ;
-        }
+        
         ::selection{
-            color: red;
+            color: whitesmoke;
             background-color: black;
         }
         a:visited{
-            color: whitesmoke;
+            color: black;
 
         }
         a:link{
@@ -38,22 +33,34 @@
             content:"🔥 " ;
         }
         @keyframes example{
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:200px; top:0px;}
-             50%  {background-color:blue; left:200px; top:200px;}
-             75%  {background-color:green; left:0px; top:200px;}
-             100% {background-color:red; left:0px; top:0px;}
+            0%   {background-color:whitesmoke; left:0px; top:0px;}
+            25%  {background-color:whitesmoke; left:200px; top:0px;}
+             50%  {background-color:whitesmoke; left:200px; top:200px;}
+             75%  {background-color:whitesmoke; left:0px; top:200px;}
+             100% {background-color:whitesmoke; left:0px; top:0px;}
         }
         h2{
-            width: 65px;
-            height: 25px;
+            color:black;
+            width: 80px;
+            height: 30px;
             background-color: black;
             animation-name:example;
-            animation-duration: 5s;
-            position: relative;
+            animation-duration: 30s;
+            position:relative;
             animation-iteration-count:infinite;
         }
-        
+        h2:hover{
+            color: green;
+        }
+        h3{
+            color:red;
+        }
+        h3:hover{
+            color: #000;
+        }
+        .s:hover{
+            color:blueviolet;
+        }
 
 
 
@@ -62,7 +69,12 @@
     </style>
 </head>
 <body>
+    <audio controls autoplay>
+        <source src="tennu.mp3" tpye="audio/mp3"/>
+    </audio>
     <h2>Nahid</h2>
+    <h3>Hasan</h3>
+    <h3 class="s">shovu</h3>
     
     <p>My favrt Player is Ronaldo </p>
     <br>
@@ -74,12 +86,21 @@
         <div >mr.</div>
         <div id="cool">cool</div>
         <div id="name">Nhaid</div>
+        <br>
         <div id="what">hpi</div>
         <div>cst</div>
         <div>mpi</div>
         <div>abay</div>
         <div>jigay</div>
     </section>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    <br>
     <a href="https://www.w3schools.com/cssref/sel_visited.php">w3schools</a>
 
 
